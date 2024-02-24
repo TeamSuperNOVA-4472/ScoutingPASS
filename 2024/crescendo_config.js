@@ -76,6 +76,15 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
+    },
+    { "name": "Center Note Grab",
+      "code": "cng",
+      "type": "clickable_image",
+      "filename": "2024/field_image.png",
+      "dimensions": "3 5",
+      "clickRestriction": "onePerBox",
+      "allowableResponses": "2 5 8 11 14",
+      "shape": "circle 5 black red true"
     }
   ],
   "teleop": [
@@ -101,6 +110,11 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
+    },
+    {
+      "name": "Amp Cycle",
+      "code": "cyc",
+      "type": "cycle"
     }
   ],
   "endgame": [
