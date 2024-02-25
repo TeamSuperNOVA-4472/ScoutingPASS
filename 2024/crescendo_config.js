@@ -96,6 +96,10 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
+    { "name": "Missed Speaker",
+      "code": "tms",
+      "type": "counter"
+    },
     { "name": "Times Amplified",
       "code": "tta",
       "type": "counter"
@@ -112,7 +116,7 @@ var config_data = `
       "defaultValue": "x"
     },
     {
-      "name": "Amp Cycle",
+      "name": "Cycle",
       "code": "cyc",
       "type": "cycle"
     }
@@ -184,20 +188,23 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
+    { "name": "Robot Rating",
+      "code": "rr",
+      "type": "radio",
+      "choices": {
+        "1": "1 (not good)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (perfect)"
+      },
+      "defaultValue":"3"
     },
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 200
     }
   ]
 }`;
