@@ -1237,6 +1237,10 @@ function onTeamnameChange(event) {
   } else {
     teamLabel.innerText = "";
   }
+  var elem = document.getElementsByClassName("TeamScout")
+  for (let i = 0; i < elem.length; i++) {
+    elem[i].textContent = "Scouting: " + newNumber
+  } 
 }
 
 /**
