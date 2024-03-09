@@ -100,7 +100,7 @@ var config_data = `
       "code": "tms",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    { "name": "Amplified Speaker Notes",
       "code": "tta",
       "type": "counter"
     },
@@ -114,11 +114,6 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    },
-    {
-      "name": "Cycle",
-      "code": "cyc",
-      "type": "cycle"
     }
   ],
   "endgame": [
