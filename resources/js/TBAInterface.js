@@ -1,7 +1,7 @@
 // TBAInterface funcitons to pull data from TheBlueAlliance.com
 var teams = null;
 var schedule = null;
-var authKey = "Eyg9MVsOafLgAtdbMHwfQb2MlX3SwWObqQGsR7GexRaOVxDSaq45c0Y0ek2Q594F";
+var authKey = "EfmG1vEoV9Jfv85Wyb8ONX9BgtNYDZZ7T7FMvTWuadLrfhjqeuaEyyyIblXoOynlB";
 /**
  * Get list of teams in event
  *
@@ -25,7 +25,7 @@ function getTeams(eventCode) {
 }
 
 /**
- * Get schefule for event
+ * Get schedule for event
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
