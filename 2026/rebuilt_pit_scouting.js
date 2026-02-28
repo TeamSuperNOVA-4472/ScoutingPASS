@@ -46,8 +46,8 @@ var config_data = `
       "choices": {
         "1": "Level one<br>",
         "2": "Level two<br>",
-        "3": "Level three<br>",
-      },
+        "3": "Level three<br>"
+    },
       "defaultValue": "1"
     },
     { "name": "Planned Shooting Locations",
