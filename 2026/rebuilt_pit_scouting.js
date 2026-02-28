@@ -19,37 +19,6 @@ var config_data = `
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Drivetrain",
-      "code": "drv",
-      "type": "radio",
-      "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
-      },
-      "defaultValue": "o"
-    },
-    { "name": "Other Drivetrain",
-      "code": "odt",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
-    },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
@@ -65,23 +34,47 @@ var config_data = `
       "code": "nob",
       "type": "number"
     },
-    { "name": "Floor pickup Fuel",
-      "code": "fpu",
-      "type": "bool"
-    },
-    { "name": "Depot pickup Fuel",
-      "code": "dpu",
-      "type": "bool"
-    },
-    { "name": "Outpost pickup Fuel",
-      "code": "opu",
-      "type": "bool"
-    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+        { "name": "Theoretical climb",
+      "code": "tcl",
+      "type": "radio",
+      "choices": {
+        "1": "Level one<br>",
+        "2": "Level two<br>",
+        "3": "Level three<br>",
+      },
+      "defaultValue": "1"
+    },
+    { "name": "Planned Shooting Locations",
+      "code": "psl",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "dimensions": "7 10",
+      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
+      "expectedMax": 25,
+      "shape": "circle 5 black red true"
+    },
+    { "name": "Estimated balls per second",
+      "code": "ebps",
+      "type": "number",
+      "defaultValue": "1"
+    },
+    { "name": "Theoretical hopper size",
+      "code": "ths",
+      "type": "number",
+      "defaultValue": "0"
+    },
+    { "name": "Auton adaptability score (1-10)",
+      "code": "aas",
+      "type": "number",
+      "min": 1,
+      "max": 10,
+      "defaultValue": "1"
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",

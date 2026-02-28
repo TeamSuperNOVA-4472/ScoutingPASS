@@ -66,7 +66,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Shooting Location",
+    { "name": "Auto Shooting Locations",
       "code": "asl",
       "type": "clickable_image",
       "filename": "2026/half_field.png",
@@ -75,19 +75,9 @@ var config_data = `
       "expectedMax": 5,
       "shape": "circle 5 black red true"
     },
-    { "name": "Fuel Scored",
-      "code": "afs",
-      "expectedMax": 32,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
@@ -99,8 +89,8 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Pickup from Depot",
-      "code": "afd",
+    { "name": "Attempted trench",
+      "code": "att",
       "type": "bool"
     },
     { "name": "Pickup from Outpost",
@@ -122,29 +112,33 @@ var config_data = `
       "expectedMax": 25,
       "shape": "circle 5 black red true"
     },
-    { "name": "Fuel Scored",
-      "code": "tfs",
-      "expectedMax": 150,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+    { "name": "ACTIVE ONLY Score before shooting",
+      "code": "sbs",
+      "type": "number",
+      "defaultValue": "0"
     },
+    { "name": "Time spent shooting",
+      "code": "ats",
+      "type": "timer"
+    },
+    { "name": "Score after shooting", 
+     "code": "aas",
+     "type": "number",
+     "defaultValue": "0"
+    },
+    { "name": "Fuel Accuracy rating (out of 10)",
+      "code": "afs",
+      "type": "number",
+      "min": 0,
+      "max": 10,
+      "defaultValue": "0"
+    }, 
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
-    { "name": "Pickup from Depot",
-      "code": "tfd",
       "type": "bool"
     },
     { "name": "Pickup from Outpost",
