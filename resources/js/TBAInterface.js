@@ -25,7 +25,7 @@ function getTeams(eventCode) {
 }
 
 /**
- * Get schefule for event
+ * Get schedule for event
  *
  * @param {eventCode} eventCode the event code (i.e. 2020caln) to pull the team list
  */
