@@ -40,7 +40,7 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-        { "name": "Theoretical climb",
+    { "name": "Theoretical climb",
       "code": "tcl",
       "type": "radio",
       "choices": {
@@ -81,6 +81,12 @@ var config_data = `
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+    { "name": "Vision system",
+     "code": "pvs",
+     "type": "text,"
+     "size": 20,
+     "maxSize: 250
     },
     { "name": "Comments",
       "code": "co",
